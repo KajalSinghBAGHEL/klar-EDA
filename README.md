@@ -54,7 +54,7 @@ The above-mentioned modules can be used as below::
     >>> ds = tfds.load('cifar10', split='train', as_supervised=True)
     >>> images = []
     >>> labels = []
-    >>> for image, label in tfds.as_numpy(ds):
+    >>> for image, label in tfs.as_numpy(ds):
             h = randint(24, 56)
             w = randint(24, 56)
             image = cv2.resize(image, (w, h))
@@ -104,3 +104,5 @@ for discussion of future scope of the library at contact.klareda@gmail.com
 ## References
 
 https://test.pypi.org/project/klar-eda/
+
+
